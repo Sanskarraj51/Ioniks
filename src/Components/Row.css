@@ -1,0 +1,47 @@
+.row {
+  margin-left: 25px;
+  color: white;
+  margin-top: 10px;
+}
+.row__title {
+  font-size: medium;
+  font-weight: 300;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.row__poster {
+  padding-top: 20px;
+  height: 280px;
+  transition: transform 250ms ease;
+  transform: translateZ(0px);
+  margin-left: 5px;
+}
+.row__img {
+  width: 153px;
+  height: 230px;
+  position: relative;
+  margin-right: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  max-height: 230px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.poster__title {
+  display: flex;
+  line-height: 1.4;
+  padding-top: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 180px;
+}
+.row__poster:hover {
+  transform: translate(0, -15px);
+}
